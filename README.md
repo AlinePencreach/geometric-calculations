@@ -1,0 +1,2 @@
+# geometric-calculations
+Practicing JavaScript
