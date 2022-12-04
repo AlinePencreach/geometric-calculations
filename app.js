@@ -1,10 +1,11 @@
 //defined the Rectangle's area and perimeter 
 const Rectangle = class Rectangle {
-    constructor(height, width) {
-      this.height = height;
-      this.width = width;
-    }
-    surfaceArea() {
+  constructor(height, width) {
+    this.height = height;
+    this.width = width;
+    
+  }
+  surfaceArea() {
       return this.height * this.width;
     }
     perimeterRect() {
@@ -12,6 +13,19 @@ const Rectangle = class Rectangle {
     }
   };
   
+//defined the Circle's area and circumference 
+  const Circle = class Circle {
+      constructor(ray) {
+        this.ray = ray;
+        }
+        surfaceArea() {
+          return Math.PI * (ray * 2);
+        }
+        circumfCercle() {
+          return 2 * Math.PI * ray;
+        }
+  };
+
 //defined the Triangle's area and perimeter 
 const Triangle = class Triangle {
     constructor(ab, bc, ac, ah) {
@@ -28,18 +42,6 @@ const Triangle = class Triangle {
     }
 };
 
-//defined the Circle's area and circumference 
-const Circle = class Circle {
-    constructor(ray) {
-      this.ray = ray;
-      }
-      surfaceArea() {
-        return Math.PI * (ray * 2);
-      }
-      circumfCercle() {
-        return 2 * Math.PI * ray;
-      }
-};
 
 //defined the Cube's volume 
 const Cube = class Cube {
@@ -63,4 +65,4 @@ const Sphere = class Sphere {
     }
 };
   
-console.log(new Cube(6, 2, 6).volumeCube());
+// console.log(new Cube(6, 2, 6).volumeCube());

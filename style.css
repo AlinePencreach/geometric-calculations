@@ -8,3 +8,41 @@ html {
     width: 100vw;
     overflow: hidden;
 }
+
+body {
+    font-family: 'railway', arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 60vw;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'lobster', Impact, sans-serif;
+    font-size: 3rem;
+    line-height: .8;
+}
+
+h2 {
+    margin: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.shapes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    margin: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
