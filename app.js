@@ -1,15 +1,17 @@
+const shapes = document.querySelectorAll('.shape');
+const shapeArray = Array.from('shape');
+
 //defined the Rectangle's area and perimeter 
 const Rectangle = class Rectangle {
   constructor(height, width) {
     this.height = height;
     this.width = width;
-    
   }
   surfaceArea() {
       return this.height * this.width;
     }
-    perimeterRect() {
-      return 2 * (this.height + this.width);
+  perimeterRect() {
+    return 2 * (this.height + this.width);
     }
   };
   
@@ -66,3 +68,11 @@ const Sphere = class Sphere {
 };
   
 // console.log(new Cube(6, 2, 6).volumeCube());
+let shapeName =''
+shapes.forEach(element => element.addEventListener('click', () =>  {
+  shapeName = element.childNodes[1].id
+  // function qui affiche la formule math du shapeName.
+})
+);
+
+
